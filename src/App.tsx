@@ -1,7 +1,8 @@
 import "./App.css";
 import { Counter } from "./bases/Counter";
 import { CounterBy } from "./bases/CounterBy";
-import { CounterEffect } from "./bases/CounterEffect";
+// import { CounterEffect } from "./bases/CounterEffect";
+import { CounterHook } from "./bases/CounterHook";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <hr />
       <Counter intitialValue={15} />
       <CounterBy intitialValue={5} />
-      <CounterEffect />
+      {/* <CounterEffect /> */}
+      <CounterHook maxCount={10} />
     </>
   );
 }
