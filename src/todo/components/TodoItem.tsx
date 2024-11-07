@@ -20,7 +20,9 @@ export const TodoItem = ({ todo }: TodoItemProps) => {
         cursor: "pointer",
         textDecoration: todo.completed ? "line-through" : "",
       }}
-      onDoubleClick={() => handleDubleClick(todo.id)}
+      // onDoubleClick={() => handleDubleClick(todo.id)}
+      draggable
+      onDragEnd={() => handleDubleClick(todo.id)}
     >
       {todo.description}
     </li>
