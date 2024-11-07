@@ -4,6 +4,7 @@ import "./App.css";
 // import { CounterEffect } from "./bases/CounterEffect";
 import { CounterHook } from "./bases/CounterHook";
 import { CounterReducerComponent } from "./counter-reducer/CounterReducer.";
+import { Todo } from "./todo/Todo";
 // import { CounterReducerComponent } from "./bases/CounterReducer";
 
 function App() {
@@ -11,12 +12,9 @@ function App() {
     <>
       <p>Soy React DEF</p>
       <hr />
-      {/* <Counter intitialValue={15} />
-      <CounterBy intitialValue={5} /> */}
-      {/* <CounterEffect /> */}
       <CounterHook maxCount={10} />
-      {/* <CounterReducerComponent /> */}
       <CounterReducerComponent />
+      <Todo />
     </>
   );
 }
